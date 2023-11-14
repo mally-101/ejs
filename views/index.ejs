@@ -9,8 +9,11 @@
         <section>
             <% if(tasks.length){ %>
                 <% tasks.map((task)=>{ %>
-                    <h2><%=task.name  %></h2>
-                    <h2><%=task.task  %></h2>
+                    <a href="/api/v1/route/<%- task._id %>">
+                        <h2><%=task.name  %></h2>
+                        <p><%=task.title  %></p>
+                        <p><%=task._id %></p>
+                    </a>
                     <% }) %>
                 <% }else{ %>
                     <h3>No Task Today</h3>
