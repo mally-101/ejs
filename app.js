@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5050;
+const port = process.env.PORT || 5050;
 const morgan = require('morgan')
 // const mongoose = require('mongoose');
-const connect = require('./db/mongoDB.js')
+// const connect = require('./db/mongoDB.js')
+const connect = require('../EXPRESS TUTS/db/mongoDB.js')
 require('dotenv/config')
 const Tasks = require('./model/taskModel.js')
 
